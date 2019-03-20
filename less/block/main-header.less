@@ -5,52 +5,28 @@
 .cloud-block {
   overflow: hidden;
   position: relative;
-  padding-bottom: 810px;
+  padding-bottom: 56.25%;
   height: 0;
+  background: url(../img/unsplash.jpg) 50% 50% no-repeat;
   background-size: cover;
   & .cloud1 {
-    left: 0;
-    top: 0;
-    position: absolute;
-    -ms-user-select: none;
-    user-select: none;
-    pointer-events: none;
+    animation: animCloud 20s infinite linear
   }
   & .cloud2 {
-    left: 0;
-    top: 0;
-    position: absolute;
-    user-select: none;
-    pointer-events: none;
+    animation: animCloud 40s infinite linear
   }
   & .cloud3 {
-    left: 0;
-    top: 0;
-    position: absolute;
-    user-select: none;
-    pointer-events: none;
+    animation: animCloud 60s infinite linear
   }
   & .cloud4 {
+    animation: animCloud 80s infinite linear
+  }
+  & img {
+    width: 100%;
     left: 0;
     top: 0;
     position: absolute;
     user-select: none;
     pointer-events: none;
   }
-}
-
-.cloud1 {
-  animation: animCloud 20s infinite linear;
-}
-
-.cloud2 {
-  animation: animCloud 40s infinite linear;
-}
-
-.cloud3 {
-  animation: animCloud 60s infinite linear;
-}
-
-.cloud4 {
-  animation: animCloud 80s infinite linear;
 }
