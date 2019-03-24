@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -421,10 +433,6 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.main-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-}
 .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -452,17 +460,12 @@ input[type="radio"].visually-hidden {
             transform: translateX(-100%);
   }
 }
-.main-header {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #aad5df), to(#fffcfc));
-  background: linear-gradient(#aad5df 30%, #fffcfc 100%);
-}
 .cloud-block {
   overflow: hidden;
   position: relative;
-  padding-bottom: 56.25%;
-  height: 100vw;
-  background: url(../img/unsplash.jpg) 50% 50% no-repeat;
-  background-size: cover;
+  padding-bottom: 30%;
+  background: url(../img/unsplash.jpg) 0 0 no-repeat;
+  background-size: 100%;
 }
 .cloud-block .cloud1 {
   -webkit-animation: animCloud 20s infinite linear;
@@ -480,16 +483,41 @@ input[type="radio"].visually-hidden {
   -webkit-animation: animCloud 80s infinite linear;
           animation: animCloud 80s infinite linear;
 }
+.cloud-block .cloud5 {
+  -webkit-animation: animCloud 100s infinite linear;
+          animation: animCloud 100s infinite linear;
+}
 .cloud-block img {
-  width: 100%;
   left: 0;
-  top: 0;
+  top: -250px;
   position: absolute;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   pointer-events: none;
+}
+.main-header__title {
+  position: absolute;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  font-family: Gilroy, Arial, sans-serif;
+  text-transform: uppercase;
+  z-index: 10;
+  color: #a19f94;
+}
+.main-header__title h1 {
+  margin-bottom: 0;
+}
+.main-header__title span {
+  font-size: 28px;
+  font-weight: 400;
+  margin-right: 50px;
+}
+.main-content {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #aad5df), color-stop(70%, #fffcfc));
+  background: linear-gradient(#aad5df 30%, #fffcfc 70%);
 }
 @media (min-width: 507px) {
   .container {
