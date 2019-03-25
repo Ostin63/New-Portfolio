@@ -1,11 +1,11 @@
 .footer-menu {
-  padding-top: 70px;
+  padding-top: 15px;
   padding-bottom: 40px;
   background: linear-gradient(rgba(255, 252, 252, 0.294) 10%, rgb(137, 183, 226) 90%);
   & .menu__list {
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
     & a {
@@ -34,10 +34,11 @@
 .menu__item {
   text-align: center;
   color: #190a5e;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   & p {
     margin-bottom: 10px;
+    margin-top: 10px;
   }
   & form {
     display: flex;
@@ -48,4 +49,37 @@
 .contacts {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+@media @min-tablet-widths {
+  .footer-menu {
+    padding-top: 35px;
+  }
+  .menu__item {
+    font-size: 20px;
+  }
+}
+
+@media @tablet-widths {
+  .footer-menu {
+    padding-top: 50px;
+    & .menu__list {
+      width: 90%;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .footer-menu {
+    padding-top: 10px;
+    & .menu__list {
+      width: 90%;
+      justify-content: space-between;
+    }
+  }
+  .menu__item {
+    font-size: 22px;
+  }
 }
